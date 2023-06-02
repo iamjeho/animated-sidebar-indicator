@@ -1,10 +1,8 @@
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
     height: 100vh;
     width: 320px;
     background-color: #fff;
+    white-space: normal;
 
     &__logo {
         display: grid;
@@ -12,7 +10,7 @@
         height: 120px;
         font-size: 1.5rem;
         font-weight: 700;
-        font-family: 'Mochiy Pop P one', sans-serif;
+        font-family: "Mochiy Pop P one", sans-serif;
     }
 
     &__menu {
@@ -53,4 +51,18 @@
             transition: 0.3s ease-in-out;
         }
     }
+}
+.sidebar_menu_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 3rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.selected {
+    transition: 0.3s ease-in-out;
+    background-color: #308efe;
+    color: white;
+    border-radius: 1rem;
 }
